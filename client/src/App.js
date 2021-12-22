@@ -41,7 +41,6 @@ function App() {
   };
 
   const approveTransfer = async (transferId) => {
-    console.log(transferId);
     await wallet.methods
       .approveTransfer(transferId)
       .send({ from: accounts[0] });
